@@ -3,7 +3,7 @@
 **Instructions: ** Define each of the following Git concepts.
 
 * What is version control?  Why is it useful?
-It's a function that allows for saving code as changes are made. It's useful because it allows you to revert to an earlier state in the event of a mistake.
+It's a function that allows for saving code as changes are made. It's useful because it allows you to revert to an earlier poop state in the event of a mistake.
 
 * What is a branch and why would you use one?
 A branch allows you to make changes to code without negatively affecting the master.
