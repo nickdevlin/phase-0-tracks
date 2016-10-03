@@ -1,0 +1,22 @@
+Elevator robot:
+
+- Wait until elevator door opens.
+- Enter elevator.
+- Scan for button panel to left or right of door.
+- Orient body toward button panel.
+- Scan buttons.
+	- If button does not equal 16, continue scanning.
+	- If button equals 16, push.
+- When elevator arrives at 16, exit elevator.
+
+Taking out trash:
+
+- Open trash can
+- If height of trash is further than three inches from top rim of trash can, close trash can.
+- Otherwise:
+	- Remove trash bag from trash can.
+	- Tie bag shut and set aside.
+	- Retrieve empty bag from beneath sink.
+	- Place empty bag in trash can.
+	- Close trash can.
+	- Take full trash bag to garbage can outdoors.
