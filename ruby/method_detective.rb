@@ -7,8 +7,12 @@
 # "iNvEsTiGaTiOn".<???>
 # => “InVeStIgAtIoN”
 
+"iNvEsTiGaTiOn".swapcase
+
 # "zom".<???>
 # => “zoom”
+
+
 
 # "enhance".<???>
 # => "    enhance    "
