@@ -22,7 +22,7 @@ new_design = gets.chomp
 design_answers[change.to_sym] = new_design
 end
 
-# not working when i make a change. i originally had line 17 at line 36 instead, and it worked if a change was made, but if I didn't, it showed up anyway.
+# not working when i make a change. i originally had line 22 at line 41 instead, with other design answers, and it worked if a change was made, but if I didn't, it showed up in the hash anyway, which is obviously no bueno.
 
 client_age = client_age.to_i
 client_kids = client_kids.to_i
