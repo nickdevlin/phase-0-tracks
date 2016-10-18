@@ -93,4 +93,9 @@ remove_item("lemonade", all_items)
 
 update_quantity("ice cream", 1, all_items)
 
-#
+#This assignment showed the value of detailed pseudocode. The more detailed it is, the more quickly you can fly through the actual coding process.
+#Arrays are simpler and more straightforward, but they store less information. Hashes allow storage of two types of data, but require more attention to detail.
+#Methods return a value.
+#You can pass hashes, integers, strings, and more as arguments.
+#You can pass information between methods using variables defined outside the methods.
+#I'm still slightly confused by when to put which inputs in the define line of a method, but I understand a little bit more about why you do so.
