@@ -9,9 +9,33 @@ class Puppy
   	number.times {puts "Woof!"}
   end
 
+  def roll_over
+  	puts "*rolls over*"
+  end
+
+  def dog_years(years)
+  	years * 7
+  end
+
+  def play_dead(message)
+  	puts "#{message}...*dying gasp* *rigor mortis sets in*"
+  end
+
 end
 
-Puppy.new.fetch("ball")
+pup = Puppy.new
 
-Puppy.new.speak(4)
+pup.fetch("ball")
+
+pup.speak(4)
+
+pup.roll_over
+
+puts pup.dog_years(5)
+
+pup.play_dead("Leave my estate to my favorite offspring whose name is")
+
+
+
+
 
