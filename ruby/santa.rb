@@ -1,9 +1,12 @@
 class Santa
+	attr_reader :age, :ethnicity, :reindeer_ranking
+	attr_accessor :gender
+
 	def initialize(gender, ethnicity)
-		puts "Initializing Santa instance..."
+		puts "Initialize Santa instance..."
 		@gender 			= gender
 		@ethnicity			= ethnicity
-		#@reindeer_ranking	= ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+		@reindeer_ranking	= ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 		@age				= 0
 	end
 
@@ -14,21 +17,26 @@ class Santa
 	def eat_milk_and_cookies(cookie_type)
 		"That was a good #{cookie_type}!"
 	end
+
+	def celebrate_birthday
+		@age += 1
+	end
+
+	def get_mad_at(reindeer_name)
+		@reindeer_ranking.insert(8, @reindeer_ranking.delete_at(@reindeer_ranking.index(reindeer_name)))
+	end
 end
 
-kringle = Santa.new
+kringle = Santa.new("female", "black")
 
-p kringle.speak
+p kringle.age
+p kringle.celebrate_birthday
+p kringle.age
 
-p kringle.eat_milk_and_cookies("oatmeal raisin")
+p kringle.gender="genderfluid"
 
-all_santas = []
+p kringle.ethnicity
 
-possible_genders = ["female", "male", "genderfluid", "agender"]
-possible_ethnicities = ["black", "Chinese", "Maldovan", "Argentine"]
+kringle.get_mad_at("Vixen")
 
-possible_genders.length.times do |i|
-	all_santas << Santa.new(possible_genders[i], possible_ethnicities[i])
-end
-
-p all_santas
+p kringle.reindeer_ranking
