@@ -1,24 +1,29 @@
 class Wordguess
-	attr_accessor :word_letters, :guess_count, :used
+	attr_accessor :word_letters, :guess_count, :used, :guesses
 
 	def initialize
 		@word_letters = []
 		@used		= []
 		@guess_count = 0
 	end
+
+	def take_letter
+		word_letters = gets.chomp.chars
+		guess_blanks = []
+		guesses = word_letters.length
+		guesses.times do 
+			guess_blanks << "_"
+		end
+	end
+
+
 end
 
 puts "Welcome to WordGuess!"
 game = Wordguess.new
 
 puts "Enter the word to be guessed."
-word_letters = gets.chomp.chars
-guess_blanks = []
-guesses = word_letters.length
-guesses.times do 
-	guess_blanks << "_"
-end
-puts guess_blanks.join
+game.take_letter
 
 until game.guess_count > (guesses * 2) or guess_blanks.include?("_") == false
 	puts "Guess a letter."
