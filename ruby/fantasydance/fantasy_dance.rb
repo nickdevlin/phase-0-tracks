@@ -2,17 +2,17 @@ class Dancer
 	attr_accessor :age
 	attr_reader :dancer
 
-	def initialize(dancer_name, age)
-		@dancer 	= dancer_name
-		@age		= age
+	def initialize(dancer, age)
+		@dancer 	= "Misty Copeland"
+		@age		= 33
 	end
 
 	def name
-		p dancer
+		@dancer
 	end
 
 	def age
-		p age
+		@age
 	end
 
 	def pirouette
