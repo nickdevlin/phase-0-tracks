@@ -14,4 +14,12 @@ class Dancer
 	def age
 		p age
 	end
+
+	def pirouette
+		"*twirls*"
+	end
+
+	def bow
+		"*bows*"
+	end
 end
