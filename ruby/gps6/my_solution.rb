@@ -105,3 +105,11 @@ VirusPredictor.national_report
 
 #=======================================================================
 # Reflection Section
+
+#1. One is a giant hash, while uses a value that is its own hash.
+#2. Require_relative allows data to be brought in from a file using the relative path.
+#   Require pulls in items using an absolute path.
+#   Require_relative is more specific and adaptable.
+#3. .each, .map, .inspect
+#4. Some were listed repetitively. Some weren't needed to run the method. Another was poorly named.
+#5. Iterating through a more complex hash, learning when to refactor and ways to do so
