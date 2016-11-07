@@ -16,11 +16,13 @@ SQL
 db.execute(create_table_cmd)
 
 def add_concussion(db, player_name, year, concussion_grade)
-  db.execute("INSERT INTO concussions (player_name, year, concussion_grade) VALUES (?, ?, ?)", [player_name, year, concussion_grade])
+  	db.execute("INSERT INTO concussions (player_name, year, concussion_grade) VALUES (?, ?, ?)", [player_name, year, concussion_grade])
 end
 
-def edit_grade 
+def edit_grade(db, new_grade, player_name)
+	db.execute("UPDATE concussions SET concussion_grade = (?) WHERE name = (?)", [new_grade, player_name])
+end
 
-
-
-
+def recent_concussions
+	db.execute("SELECT * FROM concussions WHERE year=2016")
+end
