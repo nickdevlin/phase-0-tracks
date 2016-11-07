@@ -23,6 +23,14 @@ def edit_grade(db, new_grade, player_name)
 	db.execute("UPDATE concussions SET concussion_grade = (?) WHERE name = (?)", [new_grade, player_name])
 end
 
-def recent_concussions
+def all_concussions(db)
+	db.execute("SELECT * FROM concussions")
+end
+
+def recent_concussions(db)
 	db.execute("SELECT * FROM concussions WHERE year=2016")
+end
+
+def concussion_history(db, player_name)
+	db.execute("SELECT * FROM concussions WHERE name=(?)", [player_name])
 end
