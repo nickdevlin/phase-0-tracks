@@ -7,7 +7,7 @@ require 'sqlite3'
 require 'faker'
 
 # create SQLite3 database
-db = SQLite3::Database.new("kittens.db")
+db = SQLite3::Database.new("concussions.db")
 db.results_as_hash = true
 
 # learn about fancy string delimiters
