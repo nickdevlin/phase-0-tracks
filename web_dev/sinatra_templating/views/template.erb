@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Age of Students</title>
+</head>
+<body>
+	<h1>How old are our students?</h1>
+	<p>Let's find out.</p>
+	<ul>
+		<% @students.each do |student| %>
+		<li><%= student['name'] %>, <%= student['age'] %>, <%= student['campus'] %></li>
+		<% end %>
+	</ul>
+	
+</body>
+</html>
